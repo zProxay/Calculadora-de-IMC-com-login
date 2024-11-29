@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Anybody", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Adiciona flex-direction para alinhar o menu e o container verticalmente */
+    justify-content: flex-start; /* Alinha o container e o menu no início da página */
+    align-items: center;
+    margin: 0;
+    background: linear-gradient(135deg, #ffffff 0%, #d5006d 50%, #800080 100%);
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    color: #DB00FF;
+}
+
+.container {
+    width: 600px; 
+    height: 500px; 
+    display: flex;
+    margin-top: 100px; /* Espaço para o menu fixo */
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-section {
+    width: 50%; 
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    box-sizing: border-box;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form h1 {
+    color: #DB00FF;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    display: block;
+}
+
+.login-form .forgot-password {
+    font-family: "Anybody", sans-serif;
+    display: block;
+    margin: 10px 0;
+    color: #8e44ad;
+    text-decoration: none;
+    font-size: x-small;
+    text-align: center;
+}
+
+.login-form button {
+    font-family: "Anybody", sans-serif;
+    width: 100%;
+    padding: 10px;
+    background: #530C5F;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.right-section {
+    width: 50%; 
+    background: linear-gradient(to right, #DB00FF 0%, #530C5F 100%); 
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    box-sizing: border-box;
+    position: relative;
+}
+
+.right-section h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.register {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.register h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.register-button {
+    background: #8e44ad;
+    color: white;
+    border: 2px solid #6c2f7e; 
+    border-radius: 50px;
+    padding: 15px 25px; 
+    margin: 5px;
+    cursor: pointer;
+    font-family: "Anybody", sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+}
+
+.social-icons a {
+    margin: 0 5px; /* Reduz o espaçamento entre os ícones */
+}
+
+.social-icons img {
+    width: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: 40px;
+}
+.background-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 20, 147, 0.5);
+    width: 300px;
+    height: 300px;
+    bottom: 10%;
+    right: 10%;
+    box-shadow: 0 0 50px rgba(255, 20, 147, 0.7);
+}
+
+.background-circle::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 105, 180, 0.5);
+    width: 400px;
+    height: 400px;
+    bottom: -50px;
+    right: -50px;
+    box-shadow: 0 0 50px rgba(255, 105, 180, 0.7);
+}
